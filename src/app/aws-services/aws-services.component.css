@@ -1,0 +1,196 @@
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+    /* justify-content: space-around; */
+    padding: 0 0 0 0;
+}
+
+.div-ul {
+    display: contents;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+    /* justify-content: space-around; */
+    padding: 0 0 0 0;
+}
+
+li {
+    background: #fff;
+    transition: all 300ms;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    padding: 3px;
+    margin: 15px;
+    flex: 0 0 120px;
+    height: 100px;
+}
+
+body {
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+/* Practical level experience - Hands-on */
+.box-practical {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: #d88100;
+}
+/* Experience - PoCs */
+.box-experience {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: #ffb84f
+}
+/* High level experience - Designs, Studies */
+.box-medium {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #ffe0b1;
+    color: rgb(120, 120, 120)
+}
+.box-overview {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #fff8ec;
+    color: rgb(180, 180, 180)
+}
+
+
+/* .box2 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+.box3 {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+.box4 {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-align: center;
+    font-weight: bolder;
+} */
+
+.header1 {
+    font-weight: bolder;
+    font-size: 23px;
+    text-align: left;
+    border: 1px solid;
+    padding: 0px 0px 5px 60px;
+    box-shadow: rgb(38, 57, 77) 0px 16px 15px -12px;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 12px 10px 10px 0px;
+    border-radius: 10px;
+    border-color:#1976d2;
+    background-color: #1976d2;
+    color: white;
+}
+
+.annotation {
+    font-size: 11px;
+}
+
+.aws_services::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+}
+
+.aws_services::-webkit-scrollbar {
+	width: 13px;
+	background-color: #F5F5F5;
+}
+
+.aws_services::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color:rgba(150, 150, 150, 0.5)
+}
+
+.wrapper {
+   display: flex;
+}
+  
+.box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.practical {
+    background: #d88100;
+}
+
+.experience {
+    background: #ffb84f
+}
+
+.medium {
+    background: #ffe0b1;
+}
+
+.overview {
+    background: #fff8ec;
+}
+
+td.legend {
+    font-size: 16px;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+.legend-complement {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.50);
+    font-style: italic;
+}
+
+.mouse-legend {
+    position: absolute; 
+    margin: 5px 0px -3px -8px;
+}
+
+.box-service {
+    padding: 3px 0px 0px 0px;
+    width: 150px;
+    height: 38px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    /* background: #232f3e; */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    color:#232f3e; 
+    box-shadow: rgba(0, 0, 0, 0.8) 3px 3px 5px
+}
+
+.td-services {
+    text-align: -webkit-center;
+}
+
+.svg-aws-icon {
+    width: 36px;
+    height: 24px;
+}
+.td-svg-aws-icon {
+    padding-top: 4px;
+}
+
