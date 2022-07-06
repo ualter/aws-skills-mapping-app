@@ -9,6 +9,7 @@ phases:
     on-failure: ABORT
     commands:
       - echo Start pre_build...
+      - npm install -g @angular/cli@latest
       
   build:
     on-failure: ABORT
