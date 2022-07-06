@@ -2,17 +2,21 @@
 version: 0.2
 
 phases:
+
   install:
     runtime-versions:
       nodejs: 14
     commands:
+      - echo Installing source NPM dependencies...
       - n 16
+      - npm install
+      - npm install -g @angular/cli
+
   pre_build:
     on-failure: ABORT
     commands:
       - echo Start pre_build...
       - node --version
-      - npm install
       
   build:
     on-failure: ABORT
@@ -24,5 +28,6 @@ phases:
     on-failure: ABORT
     commands:
       - echo Start post_build...
+      - echo Build completed on `date`
       
 
