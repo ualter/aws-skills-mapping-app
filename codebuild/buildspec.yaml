@@ -12,7 +12,7 @@ phases:
     commands:
       - echo Start pre_build...
       - node --version
-      - npm install -g @angular/cli@14.0.2
+      - npm install
       
   build:
     on-failure: ABORT
