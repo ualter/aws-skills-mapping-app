@@ -4,12 +4,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14.x
+      nodejs: 16.15.1
   pre_build:
     on-failure: ABORT
     commands:
       - echo Start pre_build...
-      - npm install -g @angular/cli@latest
+      - npm install -g @angular/cli@14.0.2
       
   build:
     on-failure: ABORT
