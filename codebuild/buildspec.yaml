@@ -33,4 +33,5 @@ phases:
 
 artifacts:
   files:
-    - dist/aws-skills-mapping/**/*
+    - '**/*'
+  base-directory: 'dist/aws-skills-mapping'
