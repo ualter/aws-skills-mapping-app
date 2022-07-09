@@ -1,5 +1,7 @@
 export interface Professional {
     name: string;
+    linkedin: string;
+    email: string;
     categories: Category[];
 }
 

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { PROFESSIONALS } from './mock-skills';
-import { Category, Skill } from './skill';
+import { Category, Professional, Skill } from './skill';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +10,15 @@ export class SkillService {
 
   constructor() { }
 
+  getProfessionData(professionalName: string): Observable<Professional> {
+    for (let p of PROFESSIONALS) {
+      if (p.name == professionalName) {
+        return of(p);
+      }
+    }
+    throw new Error("Professional with name " + professionalName + " not found");
+  }
+  
   getProfessionalSkills(professionalName: string, categoryTitle: string): Observable<Skill[]> {
     let skills: Skill[] = [];
 
