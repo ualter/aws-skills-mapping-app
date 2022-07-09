@@ -2,3 +2,7 @@
   - Working with Mock-Skills Service
 - v0.0.2
   - Added Codebuild buildspec file, prepared to be built by a CodeBuild Project
+- v1.0.0
+  - Using Mock Data and Services, working as simple, isolated, and independent Angular Front-End application
+  - AwsSkillMapping-IaC project is deploying the Services (infrastructure) required for this version, by IaC
+  - AwsSkillMapping-IaC project is deploying its Pipeline, by IaC
