@@ -1,8 +1,10 @@
-import { Professional, Skill } from "./skill";
+import { Professional } from "./skill";
 
 export const PROFESSIONALS: Professional[] = [
     {
         name: 'Ualter Otoni Pereira',
+        linkedin: "https://linkedin.com/in/ualter",
+        email: "ualter.junior@gmail.com",
         categories: [
             {
                 sort: 0,
