@@ -6,3 +6,5 @@
   - Using Mock Data and Services, working as simple, isolated, and independent Angular Front-End application
   - AwsSkillMapping-IaC project is deploying the Services (infrastructure) required for this version, by IaC
   - AwsSkillMapping-IaC project is deploying its Pipeline, by IaC
+- v1.0.1
+  - Removed constants to Professional interface class
