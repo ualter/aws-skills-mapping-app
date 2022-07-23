@@ -20,5 +20,4 @@ export class AppComponent {
         .subscribe(p => this.professional = p)
   }
   
-  
 }

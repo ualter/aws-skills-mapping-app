@@ -3,13 +3,15 @@ import { Observable, of, throwError } from 'rxjs';
 import { map, filter, tap } from 'rxjs/operators'
 import { HttpClient } from '@angular/common/http';
 import { Category, Professional, Skill } from './skill';
+import { environment } from './../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillService {
 
-  api_gateway_restapi_url: string = "https://ovw3uboyyc.execute-api.eu-west-3.amazonaws.com/api/skills"
+  // api_gateway_restapi_url: string = "https://ovw3uboyyc.execute-api.eu-west-3.amazonaws.com/api/skills"
+  api_gateway_restapi_url: string = environment.apiURL
 
   constructor(private http: HttpClient) { }
 

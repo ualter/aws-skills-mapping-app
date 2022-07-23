@@ -2,10 +2,11 @@
   "name": "aws-skills-mapping",
   "version": "0.0.0",
   "scripts": {
+    "preBuild": "node ./pre.build.js",
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "start": "npm run preBuild && ng serve -c production",
+    "build": "npm run preBuild && ng build",
+    "watch": "npm run preBuild && ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
@@ -33,6 +34,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "replace-in-file": "^6.3.5",
     "typescript": "~4.7.2"
   }
 }
