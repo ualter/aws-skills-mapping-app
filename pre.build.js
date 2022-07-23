@@ -1,5 +1,6 @@
 var replace = require('replace-in-file');
 var fs      = require('fs');
+
 var apiUrl  = process.env.AWS_SKILLS_MAPPING_API_URL
 
 var prod_file_template = 'src/environments/environment.prod.ts.template'
@@ -29,8 +30,8 @@ try {
   console.log("-------------------------")
   console.log('API URL: ' + apiUrl);
   console.log("");
-  let changedProdFiles = replace.sync(prod_options);
-  let changedDevFiles = replace.sync(dev_options);
+  replace.sync(prod_options);
+  replace.sync(dev_options);
 } catch (error) {
   console.error('Error occurred:', error);
 }
