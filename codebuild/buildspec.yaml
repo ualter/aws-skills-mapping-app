@@ -22,7 +22,7 @@ phases:
     on-failure: ABORT
     commands:
       - echo Build started on `date`
-      - ng build
+      - npm run preBuild && ng build
       
   post_build:
     on-failure: ABORT
