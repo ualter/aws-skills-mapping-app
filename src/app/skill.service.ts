@@ -10,13 +10,13 @@ import { environment } from './../environments/environment';
 })
 export class SkillService {
 
-  // api_gateway_restapi_url: string = "https://ovw3uboyyc.execute-api.eu-west-3.amazonaws.com/api/skills"
   api_gateway_restapi_url: string = environment.apiURL
+  resource_skill: string = "skills"
 
   constructor(private http: HttpClient) { }
 
   getProfessionData(professionalName: string): Observable<Professional> {
-    return this.http.get<Professional>(this.api_gateway_restapi_url)
+    return this.http.get<Professional>(`${this.api_gateway_restapi_url}${this.resource_skill}`)
              .pipe(
               tap(v => console.log('Professional: ' + v.name)),
               filter(v => v.name === professionalName))
@@ -24,7 +24,7 @@ export class SkillService {
   
   getProfessionalCategorySkills(professionalName: string): Observable<Category[]> {
     
-    return this.http.get<Professional>(this.api_gateway_restapi_url)
+    return this.http.get<Professional>(`${this.api_gateway_restapi_url}${this.resource_skill}`)
              .pipe(
               filter(v => v.name === professionalName),
               tap(v => console.log('Filtering category skills for: ' + v.name)),
