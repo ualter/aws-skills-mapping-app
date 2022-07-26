@@ -1,3 +1,3 @@
-# AWS Skills Mapping Application
+# :wrench: AWS Skills Mapping Application
 
 A simple Angular application used by [aws-skills-mapping-iac](https://github.com/ualter/aws-skills-mapping-iac) (*an [AWS-CDK](https://aws.amazon.com/es/cdk/) Python [IaC](https://en.wikipedia.org/wiki/Infrastructure_as_code) Blueprint Solution*), as a sample application to build and prepare its required infrastructure (environment) and its CI/CD Pipeline, all on AWS using AWS-CDK (Python).
