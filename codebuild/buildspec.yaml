@@ -22,7 +22,7 @@ phases:
     on-failure: ABORT
     commands:
       - echo Build started on `date`
-      - npm run preBuild && ng build
+      - npm run preBuild && ng build -c $AWS_SKILLS_MAPPING_STAGE
       
   post_build:
     on-failure: ABORT

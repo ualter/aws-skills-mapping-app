@@ -4,8 +4,12 @@
   "scripts": {
     "preBuild": "node ./pre.build.js",
     "ng": "ng",
-    "start": "npm run preBuild && ng serve -c production",
-    "build": "npm run preBuild && ng build",
+    "start:prod": "npm run preBuild && ng serve -c production",
+    "start:preprod": "npm run preBuild && ng serve -c preprod",
+    "start:dev": "npm run preBuild && ng serve -c dev",
+    "build:prod": "npm run preBuild && ng build -c producton",
+    "build:preprod": "npm run preBuild && ng build -c preprod",
+    "build:dev": "npm run preBuild && ng build -c dev",
     "watch": "npm run preBuild && ng build --watch --configuration development",
     "test": "ng test"
   },
