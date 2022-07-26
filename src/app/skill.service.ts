@@ -16,6 +16,8 @@ export class SkillService {
   constructor(private http: HttpClient) { }
 
   getProfessionData(professionalName: string): Observable<Professional> {
+    console.log(`API URL:${this.api_gateway_restapi_url}${this.resource_skill}`)
+
     return this.http.get<Professional>(`${this.api_gateway_restapi_url}${this.resource_skill}`)
              .pipe(
               tap(v => console.log('Professional: ' + v.name)),
@@ -23,6 +25,7 @@ export class SkillService {
   }
   
   getProfessionalCategorySkills(professionalName: string): Observable<Category[]> {
+    console.log(`API URL:${this.api_gateway_restapi_url}${this.resource_skill}`)
     
     return this.http.get<Professional>(`${this.api_gateway_restapi_url}${this.resource_skill}`)
              .pipe(
