@@ -22,7 +22,7 @@ export class AppComponent {
         .subscribe(p => this.professional = p)
     
     if (environment.preprod) {
-      this.toolBarBackgroundColor = "#cbdef1"
+      this.toolBarBackgroundColor = "#051b32"
     } else if (environment.production) {
       this.toolBarBackgroundColor = "yellow"  // change later, if needed
     }
