@@ -1,3 +1,5 @@
+- **v3.0.0**
+  - All layers connected: **API Gateway** --> **Lambda Function** --> **DynamoDB**
 - **v2.0.0**
   - Distinct builds by stage (different colors, API URL for AWS API Gateway endpoint)
   - Calling AWS API Gateway for requesting data (not local data anymore)
