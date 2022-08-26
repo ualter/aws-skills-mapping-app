@@ -1,3 +1,6 @@
+- **v3.1.0**
+  - Documentation, instructions how to run locally (dev environment)
+  - Add feature to run locally with mock data
 - **v3.0.0**
   - All layers connected: **API Gateway** --> **Lambda Function** --> **DynamoDB**
 - **v2.0.0**

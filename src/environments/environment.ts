@@ -1,6 +1,6 @@
 export const environment = {
-  production: {BOOL},
-  preprod: {BOOL},
-  dev: {BOOL},
-  apiURL: 'https://ovw3uboyyc.execute-api.eu-west-3.amazonaws.com/api/skills'
+  production: false,
+  preprod: false,
+  dev: true,
+  apiURL: 'http://127.0.0.1:8080/app/skills.json'
 };
