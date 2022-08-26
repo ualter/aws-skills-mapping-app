@@ -4,16 +4,34 @@ A simple Angular application used by [aws-skills-mapping-iac](https://github.com
 
 ---
 
-## **Running in Development Mode**
+## :running: **Running in Development Mode**
 
 To run/test this application in your local environment using mock data.
 
-### **Requirements**
+### :pencil2: **Requirements**
 
 - nodejs
-- Angular Client (`npm install @angular/cli -g`)
+- npx ( `npm i npx` )
+- Angular Client ( `npm install @angular/cli -g` )
   - Run the command "`ng version`", to complete the installation in case appears the question:
     "`Would you like to share pseudonymous usage data about this project... blahn, blah (y/N) ?`
 
+---
 
-### Environment Configuration
+### :pushpin: **Steps**
+
+#### :one: **Install dependencies**
+```bash
+npm install
+```
+
+#### :two: **Set DEV environment variables**
+```bash
+export AWS_SKILLS_MAPPING_API_URL=http://localhost:8080/app/
+export AWS_SKILLS_MAPPING_STAGE=DEV
+```
+
+#### :three: **Run application**
+```bash
+npm run start:dev
+```

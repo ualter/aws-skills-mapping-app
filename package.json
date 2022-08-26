@@ -6,8 +6,8 @@
     "ng": "ng",
     "start:prod": "npm run preBuild && ng serve -c production",
     "start:preprod": "npm run preBuild && ng serve -c preprod",
-    "start:dev": "npm run preBuild && ng serve -c dev",
-    "build:prod": "npm run preBuild && ng build -c producton",
+    "start:dev" : "npm run preBuild && ng build -c dev && npx http-server ./dist/aws-skills-mapping -c-1 -a localhost -o index.html",
+    "build:prod": "npm run preBuild && ng build -c production",
     "build:preprod": "npm run preBuild && ng build -c preprod",
     "build:dev": "npm run preBuild && ng build -c dev",
     "watch": "npm run preBuild && ng build --watch --configuration development",
@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "http-server": "^14.1.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

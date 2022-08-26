@@ -1,6 +1,6 @@
 export const environment = {
-  production: {BOOL},
-  preprod: {BOOL},
-  dev: {BOOL},
+  production: false,
+  preprod: false,
+  dev: true,
   apiURL: 'http://localhost:8080/app/'
 };

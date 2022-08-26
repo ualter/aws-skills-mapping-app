@@ -7,7 +7,7 @@ var stage   = process.env.AWS_SKILLS_MAPPING_STAGE
 var template              = 'src/environments/environment.ts.template'
 var prod_file             = 'src/environments/environment.prod.ts'
 var preprod_file          = 'src/environments/environment.preprod.ts'
-var dev_file              = 'src/environments/environment.ts'
+var dev_file              = 'src/environments/environment.dev.ts'
 fs.copyFile( template, prod_file, (err) => {if (err) console.log("Error Found:", err);})
 fs.copyFile( template, preprod_file, (err) => {if (err) console.log("Error Found:", err);})
 fs.copyFile( template, dev_file, (err) => {if (err) console.log("Error Found:", err);})
@@ -36,7 +36,7 @@ try {
   };
   
   const dev_api_options = {
-    files: 'src/environments/environment.ts',
+    files: 'src/environments/environment.dev.ts',
     from: /{AWS_SKILLS_MAPPING_API_URL}/g,
     to: apiUrl,
     allowEmptyPaths: false,
@@ -57,7 +57,7 @@ try {
   let dev_stage_options = stage_options
 
   if (stage.toUpperCase() == "DEV") {
-    dev_stage_options.files = 'src/environments/environment.ts'
+    dev_stage_options.files = 'src/environments/environment.dev.ts'
     dev_stage_options.to = ['production: false', 'preprod: false', 'dev: true']
   } else if (stage.toUpperCase() == "PREPROD") {
     preprod_stage_options.files = 'src/environments/environment.preprod.ts'
